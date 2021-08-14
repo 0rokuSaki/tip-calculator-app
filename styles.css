@@ -1,0 +1,134 @@
+html, body {
+  height: 100%;
+  background-color: hsl(185, 41%, 84%);
+  font-family: 'Space Mono', monospace;
+}
+
+/* General styles */
+
+.rounded-4 {
+  border-radius: 8px !important;
+}
+
+.rounded-5 {
+  border-radius: 12px !important;
+}
+
+.rounded-6 {
+  border-radius: 16px !important;
+}
+
+.bg-very-dark-cyan {
+  background-color: hsl(183, 100%, 15%) !important;
+}
+
+.bg-strong-cyan {
+  background-color: hsl(172, 67%, 45%) !important;
+}
+
+.bg-mild-cyan {
+  background-color: #A9EEE6 !important;
+}
+
+.text-white {
+  color: hsl(189, 41%, 97%) !important;;
+}
+
+.text-strong-cyan {
+  color: hsl(172, 67%, 45%) !important;
+}
+
+.text-very-dark-cyan {
+  color: hsl(183, 100%, 15%) !important;
+}
+
+.text-dark-grayish-cyan-1 {
+  color: hsl(186, 14%, 43%) !important;
+}
+
+.text-dark-grayish-cyan-2 {
+  color: hsl(184, 14%, 56%) !important;
+}
+
+.text-light-grayish-cyan-1 {
+  color: hsl(185, 41%, 84%) !important;
+}
+
+.text-error-red {
+  color: #FF4660;
+}
+
+.border-error-red {
+  border: 2px solid #FF4660 !important;
+}
+
+/* Individual styles */
+
+::placeholder {
+  color: hsl(186, 14%, 43%);
+}
+
+.bill-input {
+  background: url(./images/icon-dollar.svg) no-repeat scroll 14px 15px;
+}
+
+.num-of-people-input {
+  background: url(./images/icon-person.svg) no-repeat scroll 14px 15px;
+}
+
+.error-message-zero-num-of-people {
+  float: right;
+  display: none;
+}
+
+.bill-input, .num-of-people-input, .custom-percent-input, .percent-selector, .reset-selector {
+  background-color: hsl(189, 41%, 97%);
+  height: 48px;
+  font-size: 1.4rem;
+}
+
+.percent-selector:hover, .reset-selector:hover {
+  cursor: pointer;
+}
+
+.percent-selector:active, .reset-selector:active {
+  background-color: #A9EEE6 !important;
+}
+
+.bill-input:focus, .num-of-people-input:focus, .custom-percent-input:focus {
+  outline: none !important;
+  border: 2px solid hsl(172, 67%, 45%) !important;
+}
+
+.num-of-people-error:focus {
+  outline: none !important;
+  border: 2px solid #FF4660 !important;
+}
+
+.reset-selector {
+  bottom: 7% !important;
+  width: 90%;
+}
+
+.tip-amount, .total-amount {
+  font-size: 2.4rem !important;
+}
+
+.attribution {
+  font-size: 11px; text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media Queries */
+@media screen and (min-width: 992px) {
+  .main-title {
+    font-size: 1.75rem;
+    padding: 4.5% 0 !important;
+  }
+  .main-container {
+    max-width: 60%;
+  }
+}
